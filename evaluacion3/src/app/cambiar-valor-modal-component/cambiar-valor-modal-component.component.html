@@ -1,0 +1,15 @@
+<div>
+  <h2 class="titulo-dinamico">Cambiar valor</h2> <!-- Añadimos una clase para el título -->
+  <form>
+    <label for="valor">Nuevo valor:</label>
+    <input type="number" id="valor" [(ngModel)]="nuevoValor" />
+    
+    <label for="moneda">Nueva moneda:</label>
+    <input type="text" id="moneda" [(ngModel)]="nuevaMoneda" />
+  </form>
+
+  <div>
+    <button class="guardar" (click)="guardar()">Guardar</button>
+    <button class="cerrar" (click)="cerrar()">Cerrar</button>
+  </div>
+</div>

@@ -1,0 +1,160 @@
+/* Estilo general */
+:host {
+  display: block;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.titulo-destinos {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea la barra de búsqueda a la izquierda */
+  margin-bottom: 20px;
+}
+
+/* Estilo de ion-searchbar */
+ion-searchbar {
+  --background: #fff; /* Fondo blanco */
+  --color: #333; /* Color del texto */
+  --placeholder-color: #888; /* Color del placeholder */
+  width: 100%;
+  max-width: 300px; /* Ancho máximo más reducido */
+  margin-right: 10px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Input alternativo para búsqueda */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px; /* Ancho máximo más reducido */
+  font-size: 1rem;
+  color: #333;
+  background-color: #f0f0f0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Color del borde en foco */
+  background-color: #fff;
+}
+
+/* Lista de destinos */
+.destinos-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio más pequeño entre los destinos */
+}
+
+/* Estilo de cada destino */
+.destino-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px; /* Bordes más pequeños */
+  transition: box-shadow 0.3s ease;
+}
+
+.destino-item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Estilo de las imágenes de los destinos */
+.destino-imagen {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+/* Información del destino */
+.destino-info {
+  flex-grow: 1;
+}
+
+.destino-info h2 {
+  margin: 0;
+  font-size: 1.1rem; /* Tamaño ligeramente reducido */
+  color: #333;
+}
+
+.destino-info p {
+  margin: 5px 0;
+  font-size: 0.9rem; /* Texto más pequeño y ordenado */
+  color: #666;
+}
+
+/* Valor Vuelo Ida y Vuelta */
+.destino-info .valor-vuelo {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Moneda */
+.destino-info .moneda {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botones de acción */
+.destino-botones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los botones al lado derecho */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.destino-botones button {
+  padding: 8px; /* Tamaño de botón reducido */
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.85rem; /* Tamaño de fuente más pequeño */
+  transition: all 0.3s ease;
+  width: 150px; /* Ancho más pequeño para los botones */
+  text-align: center;
+}
+
+/* Estilo hover para los botones */
+.destino-botones button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Lista de valores guardados */
+.valores-guardados {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.valores-guardados li {
+  padding: 5px;
+  font-size: 1rem;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}

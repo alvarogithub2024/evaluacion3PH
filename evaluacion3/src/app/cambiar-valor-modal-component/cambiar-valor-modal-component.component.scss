@@ -1,0 +1,69 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos los elementos horizontalmente */
+    justify-content: center; /* Centramos los elementos verticalmente */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif; /* Establecemos la fuente Arial */
+    height: 100%; /* Aseguramos que ocupe todo el alto disponible */
+  }
+  
+  label {
+    font-size: 15px; /* Tamaño de texto para las etiquetas */
+    font-family: Arial, sans-serif; /* Fuente Arial */
+  }
+  
+  input {
+    font-size: 15px; /* Tamaño de texto para los inputs */
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background-color: #333; /* Fondo oscuro para el input */
+    color: white;
+    font-family: Arial, sans-serif; /* Fuente Arial */
+    width: 100%; /* Ancho completo para inputs */
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Fuente Arial */
+    width: 100%; /* Ancho completo para botones */
+  }
+  
+  /* Botón para guardar */
+  button.guardar {
+    background-color: #6b6b6b; /* Color gris */
+    color: white;
+  }
+  
+  /* Botón para cerrar */
+  button.cerrar {
+    background-color: #6b6b6b; /* Color gris */
+    color: white;
+  }
+  
+  /* Estilo de hover para los botones */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Título dinámico */
+  .titulo-dinamico {
+    font-size: 20px; /* Tamaño de texto del título */
+    color: #000000; /* Texto negro */
+    text-align: center; /* Alineación del título al centro */
+    margin-bottom: 20px; /* Margen inferior */
+    font-family: Arial, sans-serif; /* Fuente Arial */
+  }
+  
+  /* Centramos el contenido */
+  

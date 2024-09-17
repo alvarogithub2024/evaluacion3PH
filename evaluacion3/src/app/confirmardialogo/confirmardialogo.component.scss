@@ -1,0 +1,57 @@
+.dialog-title {
+  font-size: 24px;      /* Tamaño del título */
+  font-weight: bold;    /* Negrita */
+  color: #333;          /* Color del título en negro */
+  text-align: center;   /* Alineación del título */
+  margin-bottom: 20px;  /* Espaciado inferior */
+  font-family: Arial, sans-serif;  /* Fuente Arial */
+}
+
+.dialog-content {
+  font-size: 18px;      /* Tamaño del texto en el contenido */
+  color: #333;          /* Color del texto en negro */
+  background-color: #fff; /* Fondo blanco */
+  padding: 15px;
+  border-radius: 8px;   /* Bordes redondeados */
+  text-align: center;   /* Alineación del texto al centro */
+  font-family: Arial, sans-serif;  /* Fuente Arial */
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;  /* Alineación de los botones al final */
+  margin-top: 20px;
+  font-family: Arial, sans-serif;  /* Fuente Arial */
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;  /* Fuente Arial */
+}
+
+/* Botón para cancelar */
+.btn-cancel {
+  background-color: #6b6b6b;  /* Rojo para cancelar */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #6b6b6b;  /* Rojo oscuro al pasar el mouse */
+}
+
+/* Botón para confirmar */
+.btn-confirm {
+  background-color: #6b6b6b;  /* Verde para confirmar */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-confirm:hover {
+  background-color: #6b6b6b;  /* Verde oscuro al pasar el mouse */
+}

@@ -1,0 +1,51 @@
+<h1 class="titulo-destinos">Destinos Vacacionales</h1>
+
+<!-- Contenedor para la barra de búsqueda -->
+<div class="search-container">
+  <ion-searchbar placeholder="Buscar destino..." (ionInput)="filtrarDestinos($event)"></ion-searchbar>
+  <input type="text" placeholder="Buscar destino..." (input)="filtrarDestinos($event)" />
+</div>
+
+<!-- Lista de destinos filtrados -->
+<ul class="destinos-lista">
+  <li *ngFor="let destino of destinosFiltrados" class="destino-item">
+    <img class="destino-imagen" [src]="destino.imagen" [alt]="destino.nombre">
+    
+    <!-- Información del destino -->
+    <div class="destino-info">
+      <h2>{{ destino.nombre }}</h2>
+      <p>{{ destino.pais }}</p>
+      <p>Moneda: {{ destino.moneda }}</p>
+      <p>Valor Vuelo Ida y Vuelta: {{ destino.valorVueloIdaVuelta | currency: destino.moneda }}</p>
+    </div>
+
+    <!-- Botones -->
+    <div class="destino-botones">
+      <button (click)="cambiarFoto(destino)">Cambiar Foto</button>
+      <button (click)="abrirModal(destino)">Cambiar Valor y Moneda</button>
+      <button (click)="solicitarConfirmacionEliminacion(destino)">Eliminar Destino</button>
+    </div>
+  </li>
+</ul>
+
+<!-- Lista de valores guardados -->
+<ul>
+  <li *ngFor="let valor of valoresGuardados">
+    {{ valor.valorVuelo }} - {{ valor.moneda }}
+  </li>
+</ul>
+
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title> Viajes </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" >
+  <ion-list>
+    <ion-item *ngFor="let c of categorias" >
+      <ion-img [src]="c.image" />
+      <ion-label> {{c.name}}</ion-label>
+      </ion-item>
+      </ion-list>
+      </ion-content>
